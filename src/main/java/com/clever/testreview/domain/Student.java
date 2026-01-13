@@ -7,9 +7,9 @@ import lombok.ToString;
 import java.util.HashSet;
 import java.util.Set;
 
-@Data // Не рекомендуется для JPA-сущностей!
+@Data
 @Entity
-@ToString // Может вызвать StackOverflowError из-за циклов!
+@ToString
 public class Student {
 
     @Id
